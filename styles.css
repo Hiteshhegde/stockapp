@@ -1,0 +1,81 @@
+body{
+   background: linear-gradient(to right,#fffeff, grey );
+}
+
+#t01 {
+    position: absolute;
+    top: 200px;
+    margin-left: 50px;
+    width: 80%;
+    background-color: #f1f1c1;
+    text-align: center;
+    box-shadow: 0px 16px 16px 0px;
+    border-radius: 10px;
+    font-weight: 600;
+    
+  }
+
+  #t01 tr:nth-child(even) {
+    background-color: #eee;
+  }
+  #t01 tr:nth-child(odd) {
+    background-color: #fff;
+  }
+  #t01 th {
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+  }
+
+  .input{
+     position: absolute;
+      margin-left: 120px;
+      margin-top: 162px;
+      width: 100px;
+  }
+
+  .graphBox{
+      position: absolute;
+      width: 80%;
+      height: 200px;
+      
+      top: 400px;
+      margin-left: 50px;
+  }
+  
+
+canvas {
+display: inline-block !important;
+
+  }
+
+#row1element, #row2element, #row3element, #row4element, #row5element, #row6element{
+      cursor: pointer;
+  }
+
+#nameSort {
+    margin: 0 auto;
+    position: absolute;
+    top: 170px;
+    margin-left: 50px;
+}
+#priceSort{
+  position: relative;
+  margin-left: 160px;
+  margin-top: 162px;
+}
+
+.input:focus::placeholder {
+  color: transparent;
+}
+
+#container{
+ width: 400px;
+ margin: 0 auto;
+ height: 500px;
+  margin-top: 200px;
+}
+
+button{
+  
+}

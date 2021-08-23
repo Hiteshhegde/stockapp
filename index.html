@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       <srcipt src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.min.js"></script>
+         <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-base.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.3.2/dist/chart.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdn.anychart.com/releases/8.10.0/js/anychart-base.min.js"></script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>       
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    <div class="container1">
+    <button id="nameSort" onclick = "sortTable(document.querySelector('table'), 2)">Sort By Name</button>
+    <button id="priceSort" onclick = "sortTable(document.querySelector('table'), 3)">Sort By Stock Price</button>
+   
+ 
+      <input type="text" id="search-input" placeholder="Search Filter" class="input"> 
+      <button id="genGraph">generate Graph</button>
+ 
+</select>
+    <div class="table">
+    
+    <table id="t01">
+    <thead>
+  <tr>
+    <th>Serial Number</th>
+    <th>Account number</th>
+    <th>Ticker</th>
+    <th>Stock price</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr class="rows" id="row1" >
+    <td >1</td>
+    <td > Account1</td>
+    <td class= >AAPL</td>
+    <td class="AAPLstock" id="row1element"></td>
+  </tr>
+  <tr class="rows" id="row2">
+    <td >2</td>
+    <td >Account2</td>
+    <td >GME</td>
+    <td class="GMEstock" id="row2element"></td>
+  </tr>
+  <tr class="rows" id="row3">
+    <td >3</td>
+    <td >Account3</td>
+    <td >IBM</td>
+    <td class="IBMstock" id="row3element"></td>
+  </tr>
+  <tr class="rows" id="row4">
+    <td >4</td>
+    <td >Account4</td>
+    <td >CS</td>
+    <td class="CSstock" id="row4element"></td>
+  </tr>
+  <tr class="rows" id="row5">
+    <td >5</td>
+    <td >Account5</td>
+    <td >MSFT</td>
+    <td class="MSFTstock" id="row5element"></td>
+  </tr>
+  <tr class="rows" id="row6">
+    <td >6</td>
+    <td >Account6</td>
+    <td >INTC</td>
+    <td class="INTCstock" id="row6element"></td>
+  </tr>
+  </tbody>
+  
+</table>
+    
+    <div id="container">
+
+    
+  </div>
+  
+
+    </div>
+
+        
+    
+        <script src='server/main.js'>           
+        </script>
+        <script>
+         
+
+        </script>
+        
+      
+        
+    </body>
+</html>
